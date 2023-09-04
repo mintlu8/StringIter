@@ -1,0 +1,29 @@
+[package]
+name = "string_iter"
+authors = ["Mincong Lu <mintlux667@gmail.com>"]
+license = "MIT OR Apache-2.0"
+
+readme = "README.md"
+repository = "https://github.com/mintlu8/StringIter"
+documentation = "https://docs.rs/StringIter"
+description = """
+An overly designed &str iterator made with zero-copy parsing in mind.
+"""
+keywords = ["str", "string", "iterator"]
+version = "0.1.0"
+edition = "2021"
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5.1"
+itertools = "0.11.0"
+rand = "0.8.5"
